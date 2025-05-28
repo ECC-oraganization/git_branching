@@ -1,5 +1,5 @@
 FROM docker.io/library/openjdk:17-jdk-slim
 WORKDIR /app
-COPY /JtProject/target/*.jar app.jar
-EXPOSE 8080
+COPY **/target/*.jar app.jar
+EXPOSE 808080
 ENTRYPOINT ["java", "-jar", "app.jar"]
